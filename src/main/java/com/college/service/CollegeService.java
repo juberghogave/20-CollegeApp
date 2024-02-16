@@ -18,7 +18,7 @@ public class CollegeService {
 		
 	}
 
-	public College getCollege(Integer id) {
+	 College getCollege(Integer id) {
 		
 		return collegerepo.findById(id).get();
 	}
@@ -28,6 +28,10 @@ public class CollegeService {
 		 collegerepo.deleteById(id);
 		 
 		 return "College with "+id+" Deleted Successfully";
+	}
+	
+	public void gitPractice() {
+		
 	}
 
 }
